@@ -1,0 +1,24 @@
+server:
+  servlet:
+    context-path: /emissor/v1
+  port: 8087
+
+spring:
+  application:
+    name: emissor-ms
+  rabbitmq:
+    addresses: amqps://kalxencv:uKpmdWvCDlynzbsZVL5iVRl3aXwm1Txn@beaver.rmq.cloudamqp.com/kalxencv
+  mail:
+    host: smtp.gmail.com
+    username: localizaaiamazonas@gmail.com
+    password: aondgffbxzsevncx
+    properties:
+      mail:
+        smtp:
+          port: 587
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
